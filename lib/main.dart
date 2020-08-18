@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:order_app/tabs/home_tab.dart';
+import 'package:order_app/tabs/profile_tab.dart';
 
 void main() {
   runApp(OrderApp());
@@ -17,7 +18,8 @@ class _OrderAppState extends State<OrderApp> {
   final tabs = [
     // Center(child: Text('Home')),
     HomeTab(),
-    Center(child: Text('Profile')),
+    // Center(child: Text('Profile')),
+    ProfileTab(),
     Center(child: Text('Appoinments')),
     Center(child: Text('Settings')),
   ];
@@ -59,7 +61,7 @@ class _OrderAppState extends State<OrderApp> {
           BottomNavigationBarItem(
             icon: Icon(Icons.access_time),
             title: Text('Appointments'),
-            backgroundColor: Colors.pinkAccent[600],
+            backgroundColor: Colors.pinkAccent,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),

@@ -9,64 +9,79 @@ class HomeTab extends StatefulWidget {
 class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[
-        Container(
-          padding: EdgeInsets.all(10.0),
-          
-          child: Column(
-            children: <Widget>[
-              HomeMultiCard([
-                {
-                  'bgImagePath': 'assets/lashes_home.jpg',
-                  'bgColor': Colors.orange[200],
-                  'titleColor': Colors.white,
-                  'flex': 2,
-                  'title': 'ריסים',
-                },
-                {
-                  'bgImagePath': 'assets/clients_tell_home.jpg',
-                  'bgColor': Colors.amber[200],
-                  'titleColor': Colors.orange[700],
-                  'flex': 3,
-                  'title': 'הרמת גבות',
-                }
-              ]),
-              SizedBox(
-                height: 10.0,
+    return Container(
+      color: Colors.pink[50],
+      child: ListView(
+        children: <Widget>[
+          Container(
+            height: 50.0,
+            child: Center(
+              child: Text(
+                'ברוכה הבאה',
+                style: TextStyle(
+                  color: Colors.purple[700],
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              HomeMultiCard([
-                {
-                  'bgImagePath': 'assets/advanced_treatments_home.jpg',
-                  'bgColor': Colors.pink[200],
-                  'titleColor': Colors.pink[900],
-                  'flex': 2,
-                  'title': 'טיפולי יופי מתקדמים',
-                },
-              ]),
-              SizedBox(
-                height: 10.0,
-              ),
-              HomeMultiCard([
-                {
-                  'bgImagePath': 'assets/clients_tell_home.jpg',
-                  'bgColor': Colors.purple[100],
-                  'titleColor': Colors.purple[900],
-                  'flex': 3,
-                  'title': 'לקוחות מספרות',
-                },
-                {
-                  'bgImagePath': 'assets/eyebrows_home.jpg',
-                  'bgColor': Colors.red[100],
-                  'titleColor': Colors.red[900],
-                  'flex': 2,
-                  'title': 'גבות',
-                },
-              ]),
-            ],
+            ),
           ),
-        ),
-      ],
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Column(
+              children: <Widget>[
+                HomeMultiCard([
+                  {
+                    'bgImagePath': 'assets/lashes_home.jpg',
+                    'bgColor': Colors.orange[200],
+                    'titleColor': Colors.white,
+                    'flex': 2,
+                    'title': 'ריסים',
+                  },
+                  {
+                    'bgImagePath': 'assets/clients_tell_home.jpg',
+                    'bgColor': Colors.amber[200],
+                    'titleColor': Colors.orange[700],
+                    'flex': 3,
+                    'title': 'הרמת גבות',
+                  }
+                ]),
+                SizedBox(
+                  height: 10.0,
+                ),
+                HomeMultiCard([
+                  {
+                    'bgImagePath': 'assets/advanced_treatments_home.jpg',
+                    'bgColor': Colors.pink[200],
+                    'titleColor': Colors.pink[900],
+                    'flex': 2,
+                    'title': 'טיפולי יופי מתקדמים',
+                  },
+                ]),
+                SizedBox(
+                  height: 10.0,
+                ),
+                HomeMultiCard([
+                  {
+                    'bgImagePath': 'assets/clients_tell_home.jpg',
+                    'bgColor': Colors.purple[100],
+                    'titleColor': Colors.purple[900],
+                    'flex': 3,
+                    'title': 'לקוחות מספרות',
+                  },
+                  {
+                    'bgImagePath': 'assets/eyebrows_home.jpg',
+                    'bgColor': Colors.red[100],
+                    'titleColor': Colors.red[900],
+                    'flex': 2,
+                    'title': 'גבות',
+                  },
+                ]),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
