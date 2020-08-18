@@ -13,15 +13,19 @@ class _HomeTabState extends State<HomeTab> {
       color: Colors.pink[50],
       child: ListView(
         children: <Widget>[
+          SizedBox(height: 10.0,),
           Container(
             height: 50.0,
             child: Center(
               child: Text(
-                'ברוכה הבאה',
+                '!ברוכה הבאה',
                 style: TextStyle(
-                  color: Colors.purple[700],
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
+                  color: Colors.purple[400],
+                  fontSize: 35.0,
+                  fontWeight: FontWeight.w900,
+                  shadows: <Shadow> [
+                    Shadow(color: Colors.amber[100], blurRadius: 10.0)
+                  ]
                 ),
               ),
             ),
